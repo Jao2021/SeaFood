@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
+        <title>SeaFood</title>
+    </head>
+    <body>
+        <div class="top-menu">
+            <div class="top-left">
+                <i class="fa-regular fa-envelope-open"></i><h4>email-teste@email.com</h4>
+            </div>
+            
+            <div class="top-right">
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #B59316; font-size: 17px; padding-top: 10px; padding-left: 12px;"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #B59316; font-size: 17px; padding-top: 10px; padding-left: 12px;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #B59316; font-size: 17px; padding-top: 10px; padding-left: 12px;"></i></a>
+            </div>
+        </div>
+        <header>
+            <div class="menu-logo">
+                <a href="home.html">SeaFood</a>
+            </div>
+            <nav id="menu-nav">
+                <button id="btn-mobile" aria-expanded="false" aria-haspopup="true"><img src="img/menu.png"></button>
+                <ul class="menu-ul" role="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">RESERVATION</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-home">
+
+            <section class="parallax">
+                <div class="title">
+                    <h1>Lorem ipsum is placeholder</h1>
+                    <button class="btn-banner"><a href="">See More</a></button>
+                </div>
+            </section>
+
+            <div class="swiper mySwiper carte">
+                <div class="swiper-wrapper cartes">
+                    <div class="swiper-slide  carter">
+                        <h2>main course</h2>
+                        <div class="carter-menu">
+                            <div class="carter-menu">
+                                <div class="carter-menu-one">
+                                    <ul>
+                                        <li><a>fsd</a></li>
+                                        <li><a>dfs</a></li>
+                                        <li><a>sdfsdf</a></li>
+                                        <li><a>dsfsd</a></li>
+                                    </ul>
+                                </div>
+                                <div class="carter-menu-two">
+                                    <ul>
+                                        <li><a>.....dsfsdf</a></li>
+                                        <li><a>.....dfsd</a></li>
+                                        <li><a>.....dfsd</a></li>
+                                        <li><a>.....dfsdf</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+    </body>
+</html>
