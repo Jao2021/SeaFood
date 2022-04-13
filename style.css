@@ -7,8 +7,8 @@
 }
 
 body{
-    font-family: 'Public Sans', sans-serif;
-    /* font-family: 'Rajdhani', sans-serif; */
+    /* font-family: 'Public Sans', sans-serif; */
+    font-family: 'Rajdhani', sans-serif; 
 }
 
 /*===MENU===*/
@@ -22,13 +22,14 @@ body{
 }
 
 .top-menu .fa-envelope-open{
-    color: #B59316;
+    color: #C5973F;
 }
 
 .top-menu h4{
     color: gray;
     font-family: 'Rajdhani', sans-serif;
     margin-left: 10px;
+    font-weight: 600;
 }
 .top-menu .top-left{
     display: flex;
@@ -75,7 +76,7 @@ header{
 }
 
 .menu-ul li a:hover{
-    color: #B59316;
+    color: #C5973F;
 }
 
 #btn-mobile{
@@ -152,7 +153,7 @@ header{
 }
 
 .parallax .title h1{
-    font-family: 'Rajdhani', sans-serif;
+    
     color:  white;
     font-size: 32px;
 }
@@ -177,47 +178,541 @@ header{
 }
 
 .parallax .btn-banner:hover{
-    border: 2px solid #B59316;
+    border: 2px solid #C5973F;
 }
 
 .parallax .btn-banner:hover a{
-    color: #B59316;
+    color: #C5973F;
 }
 
-/*=CARTE=*/
-.carte{
-    width: 100%;
-    height: 60%;
+/*=HOME-ABOUT=*/
+.home-about{
+    height: 85%;
+    align-items: center;
+    justify-items: center;
+}
+.home-abouts{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 60px;
+    padding-top: 100px;
+}
+
+.home-abouts-left{
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.home-abouts-left h4{
+    font-size: 18px;
+    color: #B59316;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.home-abouts-left h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color:#2D2F33;
+    border-bottom: 1px solid #B59316;
+}
+
+.home-abouts-left span{
+    font-size: 15px;
+    font-family: 'Public Sans', sans-serif; 
+    color: #474E54;
+}
+
+.home-abouts-button{
+    margin-top: 50px;
+    width: 50%;
+    background-color: #C5973F;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid white;
+}
+
+.home-abouts-button a{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+.home-abouts-button:hover{
+    border: 1px solid #B59316;
     background-color: white;
 }
 
-.carte .carter{
-    padding: 100px;
-    text-align: center;
+.home-abouts-button:hover a{
+    color: #B59316;
+    font-weight: 500;
 }
+
+.home-abouts-right{
+    padding: 10px;
+    width: 55%;
+
+}
+
+.home-abouts-img{
+    width: 100%;
+    height: 95%;
+    margin-left: 100px;
+}
+
+.home-abouts-img img{
+    width: 100%;
+    height: 100%;
+}
+/*=HOME-ABOUT_END*=/
+
+
+
+/*=HOME-CARTE=*/
+
+.carte-main{
+    background-image: url("img/back-carte.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90%;
+}
+
+.carte{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.carte .carter{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: 87%;
+    padding: 50px;
+    text-align: left;
+}
+
 
 .carte .carter h2{
     text-transform: uppercase;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     font-size: 30px;
+    color: white;
 }
 
-.carter .carter-menu{
-    display: flex;
-    justify-content: center;
-}
 
-.carter .carter-menu-one{
-    border-right: 1px solid #B59316;
-    padding: 20px;
+.carter .carter-menu-itens{
+    width: 100%;
+    margin-top: 2%;
     text-align: left;
 }
 
-.carter .carter-menu-two{
-    padding: 20px;
-    text-align: right;
+.carter-menu-itens .carter-item{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
-/*=CARTE=*/
+
+.carter-item .item-row{
+    width: 70%;
+    padding-top: 46px;
+}
+
+.carter .carter-menu-itens .item-title{
+    display: flex;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Public Sans', sans-serif;
+    border-bottom: 1px solid #B59316;
+}
+
+.carter .carter-menu-itens .price{
+    color: #B59316;
+    margin-bottom: 20px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.carter-menu-itens .item-img{
+    right: 0;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.carter-menu-itens .item-img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.carter .carter-button{
+    width: 25%;
+    height: 8%;
+    border: 2px solid #C5973F;
+    text-align: center;
+    padding-top: 13px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carter .carter-button a{
+    color: #C5973F;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 17px;
+}
+
+
+.carter .carter-button:hover{
+    border: 2px solid white;
+}
+
+.carter .carter-button:hover a{
+    color: white;
+}
+
+/*=CARTE_END=*/
+
+
+/*=OUR_FOOD=*/
+
+.our_food{
+    height: 65%;
+}
+
+.our_food_title{
+    text-align: center;
+    padding: 50px;
+}
+
+.our_food_title h4{
+    font-size: 18px;
+    color: #C5973F;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.our_food_title h2{
+    font-size: 27px;
+    font-weight: 600;
+    color: #2D2F33;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.recipes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.recipes .recipes_cards{
+    width: 290px;
+    height: 300px;
+}
+
+.recipes_cards img{
+    width: 100%;
+    height: 100%;
+}
+
+.recipes_cards h4{
+    position: absolute;
+    top: 2690;
+    left: 318;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+/*=OUR_FOOD=*/
+
+
+/*=CONTACT-CLIENTS=*/
+
+.contact-clients{
+    display: flex;
+}
+
+.opnion-client{
+    width: 50%;
+    height: 60%;
+    text-align: center;
+}
+
+.opnion-client .opnion-client-text{
+    padding: 70px;
+    padding-bottom: 50px;
+}
+
+.opnion-client h4{
+    font-size: 18px;
+    color: #C5973F;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.opnion-client h2{
+    font-size: 27px;
+    font-weight: 500;
+    color: #2D2F33;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.client-opnion{
+    justify-content: center;
+    padding: 60px;
+    padding-top: 0px;
+}
+
+.client-opnion h4{
+    color: #a4a6a9;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.client-opnion img{
+    width: 100px;
+    height: 90px;
+}
+
+.client-opnion #icon-client{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+
+.call-reserv{
+    background-image: url("img/call-reserv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+}
+
+.call-reserv-main{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.call-reserv-main h2{
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+.call-reserv-main span{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.call-reserv-main button{
+    margin-top: 40px;
+    padding: 15px;
+    width: 180px;
+    background-color: #C5973F;
+    border: 1px solid #C5973F;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.call-reserv-main button:hover{
+    background-color: transparent;
+    border: 1px solid #C5973F;
+}
+
+/*=CONTACT-CLIENTS_END=*/
+
 
 /*===HOME-PAGE_END===*/
+
+/*===FOOT===*/
+
+footer{
+    height: 40%;
+    background-color:#202124;
+}
+
+.main-foot h4{
+    color:white;
+    font-weight: 400;
+    font-size: 23px;
+}
+.title-foot{
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-foot h2{
+    color: white;
+    font-size: 30px;
+}
+
+.title-foot ul{
+    display: flex;
+}
+
+.title-foot ul a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.title-foot ul a:hover{
+    color: #C5973F;
+}
+
+.main-foot{
+    display: flex;
+    padding-left: 190px;
+}
+
+.fa-angle-right{
+    color: #C5973F;
+}
+
+.foot-box1{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+
+.foot-box1 ul{
+    padding-left: 5px;
+}
+
+.foot-box1 li{
+    padding-top: 20px;
+}
+
+
+
+.foot-box1 a{
+    color: #a4a6a9;
+    padding-left: 6px;
+}
+
+
+.foot-box2{
+    padding-left: 80px;
+}
+
+
+.foot-box2 ul{
+    padding-left: 5px;
+}
+
+.foot-box2 li{
+    padding-top: 20px;
+}
+
+
+
+.foot-box2 a{
+    color: #a4a6a9;
+    padding-left: 6px;
+}
+
+.foot-message{
+    padding-left: 100px;
+    width: 50%;
+}
+
+.foot-label{
+    display: flex;
+    margin-top: 15px;
+    
+}
+
+.foot-label input{
+    font-size: 15px;
+    outline: none;
+    color: #a4a6a9;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #474E54;
+    font-size: 16px;
+    width: 100%;
+}
+
+.foot-label button{
+    position: absolute;
+    right: 42.5%;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.foot-label button .fa-paper-plane{
+    font-size: 17px;
+    color:#C5973F;
+}
+
+.foot-bottom{
+    width: 100%;
+    border-top: 1px solid #474E54;
+    background-color:#202124;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.foot-bottom h4{
+    
+    
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Public Sans', sans-serif; 
+}
+
+.foot-bottom h4 a{
+    color: #B59316;
+}
+
+.foot-bottom .foot-social{
+    display: flex;
+}
+
+.foot-social:hover i{
+    color: white;
+}
+/*===FOOT_END===*/
